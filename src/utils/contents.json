@@ -1,0 +1,198 @@
+{
+  "NAVBAR": [
+    { "name": "about me", "link": "#aboutme" },
+    { "name": "projects", "link": "#projects" },
+    { "name": "contact", "link": "#contact" }
+  ],
+  "TOOLS": [
+    {
+      "name": "Vue",
+      "path": "/img/logos/vue.svg",
+      "iconOffsetTop": "7.5",
+      "bubbleScale": "1.4",
+      "position": { "x": "-100%", "y": "-70%", "scrollSpeed": "1" }
+    },
+    {
+      "name": "Sass",
+      "path": "/img/logos/sass.svg",
+      "bubbleScale": "1.1",
+      "position": { "x": "-280%", "y": "", "scrollSpeed": "2.2" }
+    },
+    {
+      "name": "Visual Studio Code",
+      "path": "/img/logos/vscode.svg",
+      "bubbleScale": "1.3",
+      "position": { "x": "110%", "y": "-60%", "scrollSpeed": "1.2" },
+      "smalltext": "true"
+    },
+    {
+      "name": "Framer",
+      "path": "/img/logos/framer.svg",
+      "iconScale": "1.5",
+      "bubbleScale": "0.9",
+      "position": { "x": "370%", "y": "-40%", "scrollSpeed": "1.8" }
+    },
+    {
+      "name": "Figma",
+      "path": "/img/logos/figma.svg",
+      "bubbleScale": "1.05",
+      "position": { "x": "250%", "y": "80%", "scrollSpeed": "1.15" }
+    },
+    {
+      "name": "TypeScript",
+      "path": "/img/logos/ts.svg",
+      "bubbleScale": "0.9",
+      "position": { "x": "-290%", "y": "140%", "scrollSpeed": "2.5" },
+      "smalltext": "true"
+    },
+    {
+      "name": "React",
+      "path": "/img/logos/react.svg",
+      "bubbleScale": "1.2",
+      "position": { "x": "-60%", "y": "120%", "scrollSpeed": "1.3" }
+    },
+    {
+      "name": "Github",
+      "path": "/img/logos/github.svg",
+      "bubbleScale": "1.1",
+      "position": { "x": "120%", "y": "155%", "scrollSpeed": "1.1" }
+    }
+  ],
+  "PROJECTS": [
+    {
+      "title": "Definario",
+      "imageList": [
+        {
+          "src": "img/project_images/definario_1.png",
+          "altText": "Homescreen of the Definario app",
+          "aspectRatio": "186/409",
+          "zIndex": "25",
+          "imageScale": "1.2",
+          "borderRadius": "1.7rem",
+          "brightness": "1",
+          "scrollSpeed": "1.2",
+          "position": { "x": "-24%", "y": "" }
+        },
+        {
+          "src": "img/project_images/definario_2.png",
+          "altText": "Learning screen of the Definario app",
+          "aspectRatio": "186/409",
+          "zIndex": "24",
+          "imageScale": "1.1",
+          "borderRadius": "1.7rem",
+          "brightness": "0.90",
+          "scrollSpeed": "1.7",
+          "position": { "x": "-89%", "y": "-8%" }
+        },
+        {
+          "src": "img/project_images/definario_3.png",
+          "altText": "",
+          "aspectRatio": "186/409",
+          "zIndex": "22",
+          "imageScale": "0.9",
+          "borderRadius": "1.3rem",
+          "brightness": "0.70",
+          "scrollSpeed": "2.5",
+          "position": { "x": "66%", "y": "-33%" }
+        },
+        {
+          "src": "img/project_images/definario_4.png",
+          "altText": "",
+          "aspectRatio": "186/409",
+          "zIndex": "23",
+          "imageScale": "1.1",
+          "borderRadius": "1.3rem",
+          "brightness": "0.95",
+          "scrollSpeed": "2",
+          "position": { "x": "106%", "y": "" }
+        }
+      ],
+      "description": "A project, which originally was made to compete in a Polish Olympiad of Technical Innovation and Inventiveness. It was designed in a mobile-first convention, although it works just as well on widescreen.",
+      "technologies": ["Vue 3", "PWA", "TypeScript", "SCSS", "anime.js"],
+      "projectLink": "https://defi.rabulinski.com",
+      "linkList": []
+    },
+    {
+      "title": "Mizore",
+      "imageList": [
+        {
+          "src": "img/project_images/mizore_1.png",
+          "altText": "Homepage of the Mizore website",
+          "aspectRatio": "16/9",
+          "zIndex": "25",
+          "imageScale": "1",
+          "brightness": "1",
+          "scrollSpeed": "1.3",
+          "position": { "x": "-15%", "y": "10%" }
+        },
+        {
+          "src": "img/project_images/mizore_2.png",
+          "altText": "Userpage of the Mizore website",
+          "aspectRatio": "16/9",
+          "zIndex": "24",
+          "imageScale": "0.95",
+          "brightness": "0.90",
+          "scrollSpeed": "2.3",
+          "position": { "x": "5%", "y": "-20%" }
+        },
+        {
+          "src": "img/project_images/mizore_3.png",
+          "altText": "Scores part of the userpage on the Mizore website",
+          "aspectRatio": "16/9",
+          "zIndex": "22",
+          "imageScale": "0.9",
+          "brightness": "0.70",
+          "scrollSpeed": "2.7",
+          "position": { "x": "35%", "y": "25%" }
+        }
+      ],
+      "description": "Mizore is the front-end of a custom osu! game server named uncho. The project has been put on hold for some time now, because the lack of time. The already written parts are perfectly usable, and would be sufficient for the basic needs for an average user.",
+      "technologies": ["Vue 2", "FontAwesome", "Less (CSS)"],
+      "projectLink": "https://mizore.wojexe.com",
+      "linkList": [
+        { "icon": "Github", "url": "https://github.com/wojexe/mizore" }
+      ]
+    },
+    {
+      "title": "Portfolio",
+      "imageList": [
+        {
+          "src": "img/project_images/portfolio_1.png",
+          "altText": "Homepage of the Mizore website",
+          "aspectRatio": "16/9",
+          "zIndex": "25",
+          "imageScale": "1",
+          "brightness": "1",
+          "scrollSpeed": "1.3",
+          "position": { "x": "", "y": "" }
+        },
+        {
+          "src": "img/project_images/portfolio_2.png",
+          "altText": "Userpage of the Mizore website",
+          "aspectRatio": "16/9",
+          "zIndex": "24",
+          "imageScale": "0.95",
+          "brightness": "0.90",
+          "scrollSpeed": "2.3",
+          "position": { "x": "-25%", "y": "25%" }
+        },
+        {
+          "src": "img/project_images/portfolio_3.png",
+          "altText": "Scores part of the userpage on the Mizore website",
+          "aspectRatio": "16/9",
+          "zIndex": "22",
+          "imageScale": "0.9",
+          "brightness": "0.70",
+          "scrollSpeed": "2.7",
+          "position": { "x": "30%", "y": "-30%" }
+        }
+      ],
+      "description": "This website you are browsing right now. It is my first app designed in Framer and written in React. My aim was to make it very informative in the cleanest way possible.",
+      "technologies": ["React", "styled-components", "react-spring"],
+      "projectLink": "",
+      "linkList": [
+        { "icon": "Github", "url": "https://github.com/wojexe/portfolio" }
+      ]
+    }
+  ]
+}
