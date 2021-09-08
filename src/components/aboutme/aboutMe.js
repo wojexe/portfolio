@@ -85,7 +85,7 @@ export default function AboutMe({ style }) {
             </a.span>
           </h1>
           <p>
-            My name is Wojtek. I am a eighteen-year-old website designer and
+            My name is Wojtek. I am a nineteen-year-old website designer and
             developer living in 🇵🇱. I am always looking for new ways of making
             things work better.
           </p>
