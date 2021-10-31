@@ -3,10 +3,9 @@ import styled from "styled-components";
 import { animated as a, useSpring } from "@react-spring/web";
 import useScrollTo from "react-spring-scroll-to-hook";
 
-import { CashIcon } from "@heroicons/react/outline";
-import { Linkedin, Github } from "@icons-pack/react-simple-icons";
+import { Twitter, Linkedin, Github } from "@icons-pack/react-simple-icons";
 
-const AnimatedCashIcon = a(CashIcon);
+const AnimatedTwitter = a(Twitter);
 const AnimatedLinkedin = a(Linkedin);
 const AnimatedGithub = a(Github);
 
@@ -63,14 +62,14 @@ const IconsContainer = styled(a.div)`
 
   & > * {
     height: var(--font-size--L);
-    width: var(--font-size--L);
+    // width: var(--font-size--L);
   }
 `;
 
 const iconList = [
   { name: "github", url: "https://github.com/wojexe" },
   { name: "linkedin", url: "https://www.linkedin.com/in/wojexe/" },
-  { name: "cash", url: "https://ko-fi.com/wojexe" },
+  { name: "cash", url: "https://twitter.com/wojexe" },
 ];
 
 function IconComponent({ icon, style, ...props }) {
@@ -97,7 +96,7 @@ function IconComponent({ icon, style, ...props }) {
     );
   if (icon === "cash")
     return (
-      <AnimatedCashIcon
+      <AnimatedTwitter
         viewBox="2 2 20 20"
         style={{ ...style, ...{ scale } }}
         onMouseEnter={() => hoverStateChange(true)}

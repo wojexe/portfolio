@@ -146,7 +146,7 @@
           "position": { "x": "35%", "y": "25%" }
         }
       ],
-      "description": "Mizore is the front-end of a custom osu! game server named uncho. The project has been put on hold for some time now, because the lack of time. The already written parts are perfectly usable, and would be sufficient for the basic needs for an average user.",
+      "description": "Mizore is the front-end of a custom osu! game server named uncho. The project has been put on hold for some time, but got revised recently. Namely, I have started rewriting the web application to Next.js with much more experience than I had when I first started the project. This is why the screenshots look a bit different from the live website at the moment.",
       "technologies": ["Vue 2", "FontAwesome", "Less (CSS)"],
       "projectLink": "https://mizore.wojexe.com",
       "linkList": [
