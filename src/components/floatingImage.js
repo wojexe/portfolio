@@ -9,7 +9,7 @@ const FloatingElement = styled(Base)`
   aspect-ratio: ${(props) => props.aspectRatio};
 
   border-radius: 50px;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 50px rgba(var(--body-background--inverted), 0.1);
 
   will-change: transform;
 `;

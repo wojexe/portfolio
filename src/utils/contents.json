@@ -107,9 +107,9 @@
           "position": { "x": "106%", "y": "" }
         }
       ],
-      "description": "A project, which originally was made to compete in a Polish Olympiad of Technical Innovation and Inventiveness. It was designed in a mobile-first convention, although it works just as well on widescreen.",
+      "description": "A project, which originally was made to compete in a Polish Olympiad of Technical Innovation and Inventiveness. It was designed in a mobile-first convention, although it works just as well on widescreen. Unfortunately, preview is unavailable at the moment.",
       "technologies": ["Vue 3", "PWA", "TypeScript", "SCSS", "anime.js"],
-      "projectLink": "https://defi.rabulinski.com",
+      "projectLink": "",
       "linkList": []
     },
     {

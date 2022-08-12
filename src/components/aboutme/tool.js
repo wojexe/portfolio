@@ -11,12 +11,14 @@ const IconContainer = styled.div`
 
   border-radius: 50%;
 
-  background-color: rgb(var(--gray));
+  background-color: rgb(var(--bubble-background));
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
 
   z-index: 50;
 
   will-change: transform;
+
+  --bubble-foreground: rgb(var(--bubble-foreground));
 
   &::before {
     content: "";
@@ -27,7 +29,7 @@ const IconContainer = styled.div`
     height: 4rem;
     z-index: 10;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: rgb(var(--bubble-foreground));
   }
 
   &::after {
@@ -42,13 +44,13 @@ const IconContainer = styled.div`
       smalltext ? `var(--font-size--XS)` : `var(--font-size--M)`};
     font-weight: 900;
     text-align: center;
-    color: white;
+    color: rgb(var(--text-color--inverted-softer));
 
     width: 4rem;
     height: 4rem;
     padding: 0.372rem;
     border-radius: 100%;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(var(--body-background--inverted), 0.6);
 
     z-index: 60;
 

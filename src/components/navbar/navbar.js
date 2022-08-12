@@ -31,9 +31,9 @@ const NavigationBar = styled(animated.nav)`
     content: "";
     width: 100%;
     height: 100%;
-    box-shadow: 0 0 64px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 64px rgba(var(--body-background--inverted), 0.1);
     border-radius: 0 9999px 9999px 0;
-    background: #fff;
+    background: rgb(var(--body-background));
 
     opacity: var(--navbar-shadow);
   }

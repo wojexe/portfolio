@@ -8,7 +8,7 @@ import Links from "components/projects/links";
 
 const ProjectElement = styled.div`
   display: grid;
-  grid-template-columns: minmax(80%, 22rem);
+  grid-template-columns: minmax(80%, 26rem);
   padding: 0 2rem;
   justify-items: center;
   row-gap: 1.5rem;

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { animated as a, useSpring } from "@react-spring/web";
+import { animated as a, config, useSpring } from "@react-spring/web";
 import useScrollTo from "react-spring-scroll-to-hook";
 
 import { Twitter, Linkedin, Github } from "@icons-pack/react-simple-icons";
@@ -22,14 +22,13 @@ const FooterElement = styled.div`
   text-align: center;
 
   font-size: var(--font-size--M);
-  color: rgb(var(--text-gray));
+  color: rgb(var(--text-color--softer));
 
   padding: 1rem 3rem;
 
-  background: rgb(var(--gray));
+  background: rgb(var(--bubble-background));
 
   border-radius: 500px;
-
 
   span:first-of-type::after {
     content: "";
@@ -45,7 +44,7 @@ const FooterElement = styled.div`
 
     border-radius: 100px;
 
-    background-color: rgb(128, 128, 128);
+    background-color: rgba(var(--body-background--inverted), 0.25);
   }
 
   @media (max-width: 425px) {
@@ -72,37 +71,46 @@ const iconList = [
   { name: "cash", url: "https://twitter.com/wojexe" },
 ];
 
-function IconComponent({ icon, style, ...props }) {
+function IconComponent({ icon, style, href, ...props }) {
   const [isHovering, hoverStateChange] = useState(false);
-  const { scale } = useSpring({ scale: isHovering ? 1.2 : 1 });
+  const { scale } = useSpring({
+    scale: isHovering ? 1.2 : 1,
+    config: config.gentle,
+  });
 
   if (icon === "github")
     return (
-      <AnimatedGithub
-        style={{ ...style, ...{ scale } }}
-        onMouseEnter={() => hoverStateChange(true)}
-        onMouseLeave={() => hoverStateChange(false)}
-        {...props}
-      />
+      <a style={{ color: "inherit" }} href={href}>
+        <AnimatedGithub
+          style={{ ...style, ...{ scale } }}
+          onMouseEnter={() => hoverStateChange(true)}
+          onMouseLeave={() => hoverStateChange(false)}
+          {...props}
+        />
+      </a>
     );
   if (icon === "linkedin")
     return (
-      <AnimatedLinkedin
-        style={{ ...style, ...{ scale } }}
-        onMouseEnter={() => hoverStateChange(true)}
-        onMouseLeave={() => hoverStateChange(false)}
-        {...props}
-      />
+      <a style={{ color: "inherit" }} href={href}>
+        <AnimatedLinkedin
+          style={{ ...style, ...{ scale } }}
+          onMouseEnter={() => hoverStateChange(true)}
+          onMouseLeave={() => hoverStateChange(false)}
+          {...props}
+        />
+      </a>
     );
   if (icon === "cash")
     return (
-      <AnimatedTwitter
-        viewBox="2 2 20 20"
-        style={{ ...style, ...{ scale } }}
-        onMouseEnter={() => hoverStateChange(true)}
-        onMouseLeave={() => hoverStateChange(false)}
-        {...props}
-      />
+      <a style={{ color: "inherit" }} href={href}>
+        <AnimatedTwitter
+          viewBox="2 2 20 20"
+          style={{ ...style, ...{ scale } }}
+          onMouseEnter={() => hoverStateChange(true)}
+          onMouseLeave={() => hoverStateChange(false)}
+          {...props}
+        />
+      </a>
     );
 }
 
@@ -125,7 +133,7 @@ export default function Footer({ style }) {
           <IconComponent
             key={index}
             icon={name}
-            onClick={() => window.open(url)}
+            href={url}
             style={{ cursor: "pointer" }}
           />
         ))}

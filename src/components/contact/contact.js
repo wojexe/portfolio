@@ -35,7 +35,7 @@ const StyledContactBubble = styled(a.a)`
 
   border-radius: 50%;
 
-  background-color: rgb(var(--gray));
+  background-color: rgb(var(--bubble-background));
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
 
   z-index: 50;
@@ -55,7 +55,7 @@ const StyledContactBubble = styled(a.a)`
     height: calc(calc(2.5 * var(--font-size--XXL)) - 0.8rem);
     z-index: 10;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: rgb(var(--bubble-foreground));
   }
 `;
 
@@ -65,7 +65,7 @@ const iconStyles = {
   height: "40%",
   objectFit: "contain",
   zIndex: "50",
-  color: "rgb(var(--text-gray))",
+  color: "rgb(var(--text-color--softer))",
 
   userSelect: "none",
   pointerEvents: "none",
@@ -75,7 +75,7 @@ function ContactBubble({ children, ...props }) {
   const [isHovering, hoverStateChange] = useState(false);
   const { scale } = useSpring({
     to: { scale: isHovering ? 1.2 : 1 },
-    config: config.molasses,
+    config: config.gentle,
   });
 
   return (

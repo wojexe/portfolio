@@ -7,7 +7,7 @@ import { Github } from "@icons-pack/react-simple-icons";
 const usedIcons = { Github };
 const knownIcons = ["Github"];
 
-export default function Link({ icon, ...props }) {
+export default function Link({ icon, href, ...props }) {
   const [isHovering, changeHover] = useState(false);
 
   const styles = useSpring({
@@ -15,31 +15,35 @@ export default function Link({ icon, ...props }) {
     height: "100%",
     width: "auto",
     cursor: "pointer",
-    willChange: "transform"
+    willChange: "transform",
   });
 
   if (knownIcons.includes(icon)) {
     const CurrentIcon = animated(usedIcons[icon]);
 
     return (
-      <CurrentIcon
-        onMouseEnter={() => changeHover(true)}
-        onMouseLeave={() => changeHover(false)}
-        style={styles}
-        {...props}
-      ></CurrentIcon>
+      <a style={{ color: "inherit" }} href={href}>
+        <CurrentIcon
+          onMouseEnter={() => changeHover(true)}
+          onMouseLeave={() => changeHover(false)}
+          style={styles}
+          {...props}
+        ></CurrentIcon>
+      </a>
     );
   } else {
     const AnimatedQuestionMarkCircleIcon = animated(QuestionMarkCircleIcon);
 
     return (
-      <AnimatedQuestionMarkCircleIcon
-        onMouseEnter={() => changeHover(true)}
-        onMouseLeave={() => changeHover(false)}
-        style={styles}
-        {...props}
-        viewBox="2 2 16 16"
-      />
+      <a style={{ color: "inherit" }} href={href}>
+        <AnimatedQuestionMarkCircleIcon
+          onMouseEnter={() => changeHover(true)}
+          onMouseLeave={() => changeHover(false)}
+          style={styles}
+          {...props}
+          viewBox="2 2 16 16"
+        />
+      </a>
     );
   }
 }

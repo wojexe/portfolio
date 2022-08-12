@@ -10,12 +10,12 @@ const LinksElement = styled.div`
   width: 100%;
   height: var(--font-size--XXL);
 
-  color: #404040;
+  color: rgb(var(--text-color--softer));
 `;
 
 export default function Links({ linkList }) {
   const links = linkList.map(({ icon, url }, index) => (
-    <Link key={index} icon={icon} onClick={() => window.open(url)} />
+    <Link key={index} icon={icon} href={url} />
   ));
 
   return <LinksElement>{links}</LinksElement>;

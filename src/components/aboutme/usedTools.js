@@ -82,7 +82,7 @@ export default function UsedTools({ style }) {
       <CenterToolBox>
         <span style={{ fontSize: "var(--font-size--XXL)" }}>🧰</span>
         <span
-          style={{ fontSize: "var(--font-size--L)", color: "rgba(0,0,0,0.75)" }}
+          style={{ fontSize: "var(--font-size--L)", color: "rgba(var(--text-color-primary),0.75)" }}
         >
           tools i use the most
         </span>

@@ -24,7 +24,7 @@ const StyledTitle = styled.h1`
 const StyledLink = styled.a`
   height: var(--font-size--L);
   width: min-content;
-  color: rgba(0, 0, 0, 0.25);
+  color: rgba(var(--text-color--primary), 0.25);
 `;
 
 export default function Title({ style, children, projectLink }) {

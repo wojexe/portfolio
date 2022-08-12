@@ -10,7 +10,7 @@ const PictureElement = styled.div`
   align-items: center;
   width: clamp(0px, 17rem, 100%);
   border-radius: 50%;
-  background: rgb(var(--gray));
+  background: rgb(var(--bubble-background));
 
   aspect-ratio: 1;
 

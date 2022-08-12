@@ -11,12 +11,11 @@ export const GlobalStyle = createGlobalStyle`
   ${normalize}
 
   html {
-    font-size: 16px;
+    background: rgb(var(--body-background));
+
+    font-size: 1rem;
 
     --width: 64ch;
-
-    --gray: 230, 230, 230;
-    --text-gray: 77, 77, 77;
 
     --font-size--XS: 0.7rem;
     --font-size--S: 0.85rem;
@@ -27,7 +26,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   @media (min-width: 768px) {
-    html {
+    :root {
       --font-size--XS: 0.75rem;
       --font-size--S: 0.9rem;
       --font-size--M: 1.1rem;
@@ -43,8 +42,10 @@ export const GlobalStyle = createGlobalStyle`
     env(safe-area-inset-bottom)
     env(safe-area-inset-left);
 
-    background: #fff;
+    background: rgb(var(--body-background));
     margin: 0;
+
+    color: rgb(var(--text-color--primary));
     font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
       "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
       sans-serif;
@@ -53,7 +54,63 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   ::selection {
-    background-color: rgba(0,0,0,0.35);
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+
+  :root,
+  ::before,
+  ::after {
+    --body-background: 255, 255, 255;
+
+    --bubble-background: 230, 230, 230;
+    --bubble-foreground: 255, 255, 255;
+
+    --text-color--primary: 0, 0, 0;
+    --text-color--softer: 77, 77, 77;
+    --text-color--inverted: 255, 255, 255;
+    --text-color--inverted-softer: 178, 178, 178;
+  }
+
+  @media (prefers-color-scheme: light) {
+    ::selection {
+      background-color: rgba(0, 0, 0, 0.35);
+    }
+  
+    :root,
+    ::before,
+    ::after {
+      --body-background: 255, 255, 255;
+      --body-background--inverted: 0, 0, 0;
+  
+      --bubble-background: 230, 230, 230;
+      --bubble-foreground: 255, 255, 255;
+  
+      --text-color--primary: 0, 0, 0;
+      --text-color--softer: 77, 77, 77;
+      --text-color--inverted: 255, 255, 255;
+      --text-color--inverted-softer: 178, 178, 178;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    ::selection {
+      background-color: rgba(0, 0, 0, 0.35);
+    }
+  
+    :root,
+    ::before,
+    ::after {
+      --body-background: 17, 17, 17;
+      --body-background--inverted: 238, 238, 238;
+
+      --bubble-background: 50, 50, 50;
+      --bubble-foreground: 90, 90, 90;
+
+      --text-color--primary: 255, 255, 255;
+      --text-color--softer: 178, 178, 178;
+      --text-color--inverted: 0, 0, 0;
+      --text-color--inverted-softer: 77, 77, 77;
+    }
   }
 `;
 

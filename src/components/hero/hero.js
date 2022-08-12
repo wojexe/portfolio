@@ -32,7 +32,7 @@ const Nickname = styled(animated.span)`
     bigger &&
     `
     font-size: 4.5rem;
-    color: rgba(0, 0, 0, 0.15);
+    color: rgba(var(--text-color--primary), 0.15);
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
   `}
 
@@ -73,7 +73,7 @@ export default function Hero({ style }) {
           transform: props.xy.to(text_main),
           zIndex: "20",
           mixBlendMode: "difference",
-          color: "white",
+          color: "#fff",
         }}
       >
         wojexe
