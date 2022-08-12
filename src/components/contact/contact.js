@@ -36,7 +36,7 @@ const StyledContactBubble = styled(a.a)`
   border-radius: 50%;
 
   background-color: rgb(var(--bubble-background));
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 25px rgba(var(--body-background--inverted), 0.05);
 
   z-index: 50;
 

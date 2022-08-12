@@ -100,8 +100,8 @@ export const GlobalStyle = createGlobalStyle`
     :root,
     ::before,
     ::after {
-      --body-background: 17, 17, 17;
-      --body-background--inverted: 238, 238, 238;
+      --body-background: 30, 30, 30;
+      --body-background--inverted: 225, 225, 225;
 
       --bubble-background: 50, 50, 50;
       --bubble-foreground: 90, 90, 90;

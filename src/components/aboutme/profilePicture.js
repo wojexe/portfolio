@@ -34,7 +34,7 @@ const PictureElement = styled.div`
     height: 90%;
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.25);
+    box-shadow: 5px 5px 50px rgba(var(--body-background--inverted), 0.25);
 
     user-select: none;
     pointer-events: none;
