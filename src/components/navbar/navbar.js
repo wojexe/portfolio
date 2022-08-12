@@ -2,9 +2,10 @@ import { useState, useEffect } from "react";
 import { useSpring, animated } from "@react-spring/web";
 import styled from "styled-components";
 
-import { NAVBAR } from "utils/contents";
-
 import NavbarItem from "components/navbar/navbarItem";
+
+import contents from "utils/contents";
+const { NAVBAR } = { ...contents }; // Destructuring from JSON stopped working
 
 const NavigationBar = styled(animated.nav)`
   z-index: 1000;
@@ -39,7 +40,7 @@ const NavigationBar = styled(animated.nav)`
 
   @media (min-width: 425px) {
     left: 50%;
-    
+
     flex-direction: row;
 
     height: unset;

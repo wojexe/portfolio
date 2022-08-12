@@ -5,7 +5,8 @@ import { useSpring, animated } from "@react-spring/web";
 
 import Tool from "components/aboutme/tool";
 
-import { TOOLS } from "utils/contents";
+import contents from "utils/contents";
+const { TOOLS } = { ...contents }; // Destructuring from JSON stopped working
 
 const AnimatedTool = animated(Tool);
 

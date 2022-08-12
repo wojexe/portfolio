@@ -4,14 +4,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@heroicons/react": "^1.0.1",
-    "@icons-pack/react-simple-icons": "^4.4.0",
-    "@react-spring/web": "^9.2.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "^4.0.3",
+    "@heroicons/react": "^1.0.6",
+    "@icons-pack/react-simple-icons": "^5.3.0",
+    "@react-spring/web": "^9.5.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
     "react-spring-scroll-to-hook": "^1.0.3",
-    "styled-components": "^5.3.0",
+    "styled-components": "^5.3.5",
     "styled-normalize": "^8.0.7"
   },
   "scripts": {

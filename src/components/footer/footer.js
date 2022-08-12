@@ -112,7 +112,7 @@ export default function Footer({ style }) {
   return (
     <FooterElement style={style}>
       <span>
-        designed and developed with ☕&❤️ by{" "}
+        designed and developed with ☕️&❤️ by{" "}
         <span
           style={{ fontStyle: "italic", cursor: "pointer" }}
           onClick={() => scrollTo("#aboutme", -120)}
