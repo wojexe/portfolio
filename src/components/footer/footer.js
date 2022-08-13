@@ -30,12 +30,12 @@ const FooterElement = styled.div`
 
   border-radius: 500px;
 
-  span:first-of-type::after {
+  span[withseparator]::after {
     content: "";
     display: block;
-    position: absolute;
+    position: relative;
 
-    top: 50%;
+    top: 1rem;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -119,7 +119,7 @@ export default function Footer({ style }) {
 
   return (
     <FooterElement style={style}>
-      <span>
+      <span withseparator="">
         designed and developed with ☕️&❤️ by{" "}
         <span
           style={{ fontStyle: "italic", cursor: "pointer" }}
@@ -134,7 +134,7 @@ export default function Footer({ style }) {
             key={index}
             icon={name}
             href={url}
-            style={{ cursor: "pointer" }}
+            style={{ cursor: "pointer", height: "100%" }}
           />
         ))}
       </IconsContainer>
