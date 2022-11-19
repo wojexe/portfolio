@@ -6,11 +6,17 @@
   ],
   "TOOLS": [
     {
-      "name": "Vue",
-      "path": "/img/logos/vue.svg",
+      "name": "React",
+      "path": "/img/logos/react.svg",
       "iconOffsetTop": "7.5",
       "bubbleScale": "1.4",
       "position": { "x": "-100%", "y": "-70%", "scrollSpeed": "1" }
+    },
+    {
+      "name": "Vue",
+      "path": "/img/logos/vue.svg",
+      "bubbleScale": "1.2",
+      "position": { "x": "-60%", "y": "120%", "scrollSpeed": "1.3" }
     },
     {
       "name": "Sass",
@@ -46,14 +52,8 @@
       "smalltext": "true"
     },
     {
-      "name": "React",
-      "path": "/img/logos/react.svg",
-      "bubbleScale": "1.2",
-      "position": { "x": "-60%", "y": "120%", "scrollSpeed": "1.3" }
-    },
-    {
-      "name": "Github",
-      "path": "/img/logos/github.svg",
+      "name": "Svelte",
+      "path": "/img/logos/svelte.svg",
       "bubbleScale": "1.1",
       "position": { "x": "120%", "y": "155%", "scrollSpeed": "1.1" }
     }
@@ -192,6 +192,37 @@
       "projectLink": "",
       "linkList": [
         { "icon": "Github", "url": "https://github.com/wojexe/portfolio" }
+      ]
+    },
+    {
+      "title": "Family tree",
+      "imageList": [
+        {
+          "src": "img/project_images/family_tree_1.png",
+          "altText": "Example tree created by this app",
+          "aspectRatio": "1249/771",
+          "zIndex": "25",
+          "imageScale": "1",
+          "brightness": "1",
+          "scrollSpeed": "1.3",
+          "position": { "x": "-25%", "y": "-10%" }
+        },
+        {
+          "src": "img/project_images/family_tree_2.png",
+          "altText": "The person edit screen of the app",
+          "aspectRatio": "1249/771",
+          "zIndex": "24",
+          "imageScale": "0.90",
+          "brightness": "1",
+          "scrollSpeed": "2.0",
+          "position": { "x": "35%", "y": "10%" }
+        }
+      ],
+      "description": "Relatively simple app, which I created to make my family's genealogy tree. It may not have the prettiest visuals, but it solved my problem just fine. I wanted flexibility and customization - that's exactly what I have achieved. Creating this app was a bit of a challange to me, as I did not write complicated logic too often before.",
+      "technologies": ["Svelte", "LeaderLine", "svelte-persistent-store"],
+      "projectLink": "https://family.wojexe.com",
+      "linkList": [
+        { "icon": "Github", "url": "https://github.com/wojexe/family-tree" }
       ]
     }
   ]

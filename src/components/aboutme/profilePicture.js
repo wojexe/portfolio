@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import picture from "assets/myself.jpeg";
+import picture from "assets/myself.png";
 
 const PictureElement = styled.div`
   display: flex;

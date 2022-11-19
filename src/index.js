@@ -94,7 +94,7 @@ export const GlobalStyle = createGlobalStyle`
 
   @media (prefers-color-scheme: dark) {
     ::selection {
-      background-color: rgba(0, 0, 0, 0.35);
+      background-color: rgba(255, 255, 255, 0.2);
     }
   
     :root,

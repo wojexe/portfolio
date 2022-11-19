@@ -11,13 +11,15 @@ const TechnologiesElement = styled.div`
 const TechnologiesList = styled.ul`
   font-size: var(--font-size--M);
   columns: 2;
-  padding: 0;
-  margin: 0 auto;
+  padding: 0 4rem;
+  margin: 0 -2rem 0 0;
   justify-self: center;
   width: 100%;
 
   li {
     list-style: inside;
+
+    list-style-position: outside;
 
     &::marker {
       content: "•  ";

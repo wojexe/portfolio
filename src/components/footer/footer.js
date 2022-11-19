@@ -66,9 +66,9 @@ const IconsContainer = styled(a.div)`
 `;
 
 const iconList = [
-  { name: "github", url: "https://github.com/wojexe" },
   { name: "linkedin", url: "https://www.linkedin.com/in/wojexe/" },
-  { name: "cash", url: "https://twitter.com/wojexe" },
+  { name: "github", url: "https://github.com/wojexe" },
+  { name: "twitter", url: "https://twitter.com/wojexe" },
 ];
 
 function IconComponent({ icon, style, href, ...props }) {
@@ -100,7 +100,7 @@ function IconComponent({ icon, style, href, ...props }) {
         />
       </a>
     );
-  if (icon === "cash")
+  if (icon === "twitter")
     return (
       <a style={{ color: "inherit" }} href={href}>
         <AnimatedTwitter

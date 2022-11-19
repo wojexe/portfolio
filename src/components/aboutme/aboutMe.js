@@ -34,7 +34,6 @@ const StyledDescription = styled.div`
     hyphens: auto;
   }
 
-
   @media (min-width: 425px) {
     grid-row: unset;
     grid-column: 3 / 4;
@@ -85,9 +84,9 @@ export default function AboutMe({ style }) {
             </a.span>
           </h1>
           <p>
-            My name is Wojtek. I am a nineteen-year-old website designer and
-            developer living in 🇵🇱. I am always looking for new ways of making
-            things work better.
+            My name is Wojtek. I am a twenty-year-old web developer & 2nd year
+            Computer Science student living in 🇵🇱. I enjoy programming -
+            especially while creating pretty things that work just right.
           </p>
         </StyledDescription>
       </AboutMeWrapper>
