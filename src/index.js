@@ -2,7 +2,7 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
 
-import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
+// import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 
 import { createGlobalStyle } from "styled-components";
 import { normalize } from "styled-normalize";
@@ -123,4 +123,4 @@ root.render(
   </React.StrictMode>
 );
 
-serviceWorkerRegistration.register();
+// serviceWorkerRegistration.register();
