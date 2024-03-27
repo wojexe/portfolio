@@ -1,6 +1,4 @@
-import { useState } from "react";
 import styled from "styled-components";
-import { animated as a, config, useSpring } from "@react-spring/web";
 import useScrollTo from "react-spring-scroll-to-hook";
 
 const FooterElement = styled.div`
