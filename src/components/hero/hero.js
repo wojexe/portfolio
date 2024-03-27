@@ -50,7 +50,7 @@ export default function Hero({ style }) {
   const text_main = (x, y) => `translate3d(${x / 20}px,${y / 20}px,0)`;
   const text_shadow = (x, y) =>
     `translate3d(${x / 8 - 30}px,${y / 8 + 40}px,0)`;
-  const mizore = (x, y) => `translate3d(${x / 7 + 250}px,${y / 7 - 150}px,0)`;
+  const genealogee = (x, y) => `translate3d(${x / 7 + 250}px,${y / 7 - 150}px,0)`;
   const definario = (x, y) => `translate3d(${x / 7 - 250}px,${y / 5}px,0)`;
   const portfolio = (x, y) =>
     `translate3d(${x / 10 + 300}px,${y / 6 + 170}px,0)`;
@@ -60,7 +60,7 @@ export default function Hero({ style }) {
     xy: [0, 0],
     config: { mass: 10, tension: 550, friction: 640 },
   }));
-  
+
   const { scrollTo } = useScrollTo();
 
   return (
@@ -86,12 +86,12 @@ export default function Hero({ style }) {
       </Nickname>
 
       <FloatingImage
-        aspectRatio="16/9"
-        src="img/project_images/mizore_1.png"
+        aspectRatio="1249/771"
+        src="img/project_images/family_tree_1.png"
         style={{
           zIndex: "10",
           width: "30em",
-          transform: props.xy.to(mizore),
+          transform: props.xy.to(genealogee),
           filter: "brightness(0.9)",
         }}
       />
