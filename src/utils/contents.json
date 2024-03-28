@@ -6,30 +6,42 @@
   ],
   "TOOLS": [
     {
-      "name": "React",
-      "path": "/img/logos/react.svg",
+      "name": "Svelte",
+      "path": "/img/logos/svelte.svg",
       "iconOffsetTop": "7.5",
       "bubbleScale": "1.4",
       "position": { "x": "-100%", "y": "-70%", "scrollSpeed": "1" }
     },
     {
-      "name": "Vue",
-      "path": "/img/logos/vue.svg",
+      "name": "React",
+      "path": "/img/logos/react.svg",
       "bubbleScale": "1.2",
       "position": { "x": "-60%", "y": "120%", "scrollSpeed": "1.3" }
     },
     {
-      "name": "Sass",
-      "path": "/img/logos/sass.svg",
+      "name": "Swift",
+      "path": "/img/logos/swift.svg",
       "bubbleScale": "1.1",
-      "position": { "x": "-280%", "y": "", "scrollSpeed": "2.2" }
+      "position": { "x": "120%", "y": "155%", "scrollSpeed": "1.1" }
     },
     {
-      "name": "Visual Studio Code",
-      "path": "/img/logos/vscode.svg",
+      "name": "Sass",
+      "path": "/img/logos/sass.svg",
+      "bubbleScale": "0.9",
+      "position": { "x": "-290%", "y": "140%", "scrollSpeed": "2.5" }
+    },
+    {
+      "name": "TypeScript",
+      "path": "/img/logos/ts.svg",
+      "bubbleScale": "1.1",
+      "position": { "x": "-280%", "y": "", "scrollSpeed": "2.2" },
+      "smalltext": true
+    },
+    {
+      "name": "Ruby",
+      "path": "/img/logos/ruby.svg",
       "bubbleScale": "1.3",
-      "position": { "x": "110%", "y": "-60%", "scrollSpeed": "1.2" },
-      "smalltext": "true"
+      "position": { "x": "110%", "y": "-60%", "scrollSpeed": "1.2" }
     },
     {
       "name": "Framer",
@@ -43,19 +55,6 @@
       "path": "/img/logos/figma.svg",
       "bubbleScale": "1.05",
       "position": { "x": "250%", "y": "80%", "scrollSpeed": "1.15" }
-    },
-    {
-      "name": "TypeScript",
-      "path": "/img/logos/ts.svg",
-      "bubbleScale": "0.9",
-      "position": { "x": "-290%", "y": "140%", "scrollSpeed": "2.5" },
-      "smalltext": "true"
-    },
-    {
-      "name": "Svelte",
-      "path": "/img/logos/svelte.svg",
-      "bubbleScale": "1.1",
-      "position": { "x": "120%", "y": "155%", "scrollSpeed": "1.1" }
     }
   ],
   "PROJECTS": [

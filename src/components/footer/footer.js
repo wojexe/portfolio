@@ -6,10 +6,7 @@ const FooterElement = styled.div`
 
   justify-self: center;
 
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto;
-  gap: 2rem;
+  display: flex;
   place-items: center;
   text-align: center;
 
