@@ -95,7 +95,7 @@ export default function Contact({ style }) {
     <ContactElement style={style} id="contact">
       <SectionTitle>Contact</SectionTitle>
       <ContactOptions>
-        <ContactBubble href="mailto:wojexe@gmail.com">
+        <ContactBubble href="mailto:wojciech.sierotowicz@gmail.com">
           <MailIcon style={iconStyles} />
         </ContactBubble>
 

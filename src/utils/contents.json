@@ -6,30 +6,42 @@
   ],
   "TOOLS": [
     {
-      "name": "React",
-      "path": "/img/logos/react.svg",
+      "name": "Svelte",
+      "path": "/img/logos/svelte.svg",
       "iconOffsetTop": "7.5",
       "bubbleScale": "1.4",
       "position": { "x": "-100%", "y": "-70%", "scrollSpeed": "1" }
     },
     {
-      "name": "Vue",
-      "path": "/img/logos/vue.svg",
+      "name": "React",
+      "path": "/img/logos/react.svg",
       "bubbleScale": "1.2",
       "position": { "x": "-60%", "y": "120%", "scrollSpeed": "1.3" }
     },
     {
-      "name": "Sass",
-      "path": "/img/logos/sass.svg",
+      "name": "Swift",
+      "path": "/img/logos/swift.svg",
       "bubbleScale": "1.1",
-      "position": { "x": "-280%", "y": "", "scrollSpeed": "2.2" }
+      "position": { "x": "120%", "y": "155%", "scrollSpeed": "1.1" }
     },
     {
-      "name": "Visual Studio Code",
-      "path": "/img/logos/vscode.svg",
+      "name": "Sass",
+      "path": "/img/logos/sass.svg",
+      "bubbleScale": "0.9",
+      "position": { "x": "-290%", "y": "140%", "scrollSpeed": "2.5" }
+    },
+    {
+      "name": "TypeScript",
+      "path": "/img/logos/ts.svg",
+      "bubbleScale": "1.1",
+      "position": { "x": "-280%", "y": "", "scrollSpeed": "2.2" },
+      "smalltext": true
+    },
+    {
+      "name": "Ruby",
+      "path": "/img/logos/ruby.svg",
       "bubbleScale": "1.3",
-      "position": { "x": "110%", "y": "-60%", "scrollSpeed": "1.2" },
-      "smalltext": "true"
+      "position": { "x": "110%", "y": "-60%", "scrollSpeed": "1.2" }
     },
     {
       "name": "Framer",
@@ -43,19 +55,6 @@
       "path": "/img/logos/figma.svg",
       "bubbleScale": "1.05",
       "position": { "x": "250%", "y": "80%", "scrollSpeed": "1.15" }
-    },
-    {
-      "name": "TypeScript",
-      "path": "/img/logos/ts.svg",
-      "bubbleScale": "0.9",
-      "position": { "x": "-290%", "y": "140%", "scrollSpeed": "2.5" },
-      "smalltext": "true"
-    },
-    {
-      "name": "Svelte",
-      "path": "/img/logos/svelte.svg",
-      "bubbleScale": "1.1",
-      "position": { "x": "120%", "y": "155%", "scrollSpeed": "1.1" }
     }
   ],
   "PROJECTS": [
@@ -113,47 +112,6 @@
       "linkList": []
     },
     {
-      "title": "Mizore",
-      "imageList": [
-        {
-          "src": "img/project_images/mizore_1.png",
-          "altText": "Homepage of the Mizore website",
-          "aspectRatio": "16/9",
-          "zIndex": "25",
-          "imageScale": "1",
-          "brightness": "1",
-          "scrollSpeed": "1.3",
-          "position": { "x": "-15%", "y": "10%" }
-        },
-        {
-          "src": "img/project_images/mizore_2.png",
-          "altText": "Userpage of the Mizore website",
-          "aspectRatio": "16/9",
-          "zIndex": "24",
-          "imageScale": "0.95",
-          "brightness": "0.90",
-          "scrollSpeed": "2.3",
-          "position": { "x": "5%", "y": "-20%" }
-        },
-        {
-          "src": "img/project_images/mizore_3.png",
-          "altText": "Scores part of the userpage on the Mizore website",
-          "aspectRatio": "16/9",
-          "zIndex": "22",
-          "imageScale": "0.9",
-          "brightness": "0.70",
-          "scrollSpeed": "2.7",
-          "position": { "x": "35%", "y": "25%" }
-        }
-      ],
-      "description": "Mizore is the front-end of a custom osu! game server named uncho. The project has been put on hold for some time, but got revised recently. Namely, I have started rewriting the web application to Next.js with much more experience than I had when I first started the project. This is why the screenshots look a bit different from the live website at the moment.",
-      "technologies": ["Vue 2", "FontAwesome", "Less (CSS)"],
-      "projectLink": "https://mizore.wojexe.com",
-      "linkList": [
-        { "icon": "Github", "url": "https://github.com/wojexe/mizore" }
-      ]
-    },
-    {
       "title": "Portfolio",
       "imageList": [
         {
@@ -195,7 +153,7 @@
       ]
     },
     {
-      "title": "Family tree",
+      "title": "Genealogee",
       "imageList": [
         {
           "src": "img/project_images/family_tree_1.png",
@@ -218,7 +176,7 @@
           "position": { "x": "35%", "y": "10%" }
         }
       ],
-      "description": "Relatively simple app, which I created to make my family's genealogy tree. It may not have the prettiest visuals, but it solved my problem just fine. I wanted flexibility and customization - that's exactly what I have achieved. Creating this app was a bit of a challange to me, as I did not write complicated logic too often before.",
+      "description": "Originally, an app which I created to make my family's genealogy tree. It may not have the prettiest visuals, but it solved my problem just fine. I wanted flexibility and customization - that's exactly what I have achieved. Creating this app was a bit of a challange to me, as I did not write complicated logic too often before. It's currently getting rewritten to SvelteKit & Swift with Vapor.",
       "technologies": ["Svelte", "LeaderLine", "svelte-persistent-store"],
       "projectLink": "https://family.wojexe.com",
       "linkList": [

@@ -84,9 +84,9 @@ export default function AboutMe({ style }) {
             </a.span>
           </h1>
           <p>
-            My name is Wojtek. I am a twenty-year-old web developer & 2nd year
-            Computer Science student living in 🇵🇱. I enjoy programming -
-            especially while creating pretty things that work just right.
+            My name is Wojtek. I am a twenty-one-year-old Software Engineer &
+            3rd year Computer Science student living in 🇵🇱. I am committed to
+            providing high-quality code with great attention to detail.
           </p>
         </StyledDescription>
       </AboutMeWrapper>
